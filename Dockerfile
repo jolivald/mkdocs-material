@@ -91,6 +91,31 @@ RUN \
 && \
   git config --system --add safe.directory /site
 
+# Install chromium with chrome driver
+RUN apk add --no-cache bash \
+  alsa-lib \
+  cups-libs \
+  dbus-libs \
+  eudev-libs \
+  expat \
+  flac \
+  gdk-pixbuf \
+  glib \
+  libgcc \
+  libjpeg-turbo \
+  libpng \
+  libwebp \
+  libx11 \
+  libxcomposite \
+  libxdamage \
+  libxext \
+  libxfixes \
+  tzdata \
+  libexif \
+  xvfb \
+  chromium \
+  chromium-chromedriver
+
 # Set working directory
 WORKDIR /docs
 
