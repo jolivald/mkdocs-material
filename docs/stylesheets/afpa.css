@@ -1,0 +1,42 @@
+div[data-md-component="announce"]{
+    display: none;
+}
+
+.md-main__inner {
+    margin-top: 0;
+}
+.md-content__inner {
+    position: relative;
+    padding-top: 0;
+}
+.md-content__inner::before {
+    height: 0;
+}
+
+#banner-afpa {
+    margin: 0 0 2em 0;
+    padding-right: 1em;
+}
+
+/* download button tweaks */
+article.md-content__inner {
+    padding-bottom: 70px;
+}
+div.download-btn {
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+}
+
+.download-btn a {
+    display: block;
+    font-weight: 700;
+    padding: 10px 32px;
+    color: var(--md-accent-bg-color);
+    background-color: var(--md-primary-fg-color);
+}
+.download-btn a:hover {
+    color: var(--md-accent-bg-color);
+    background-color: #dd2e57;
+    background-color: #80c13f;
+}

@@ -22,3 +22,10 @@ graph TD
   E -->|Ajoute l'interactivité| F
 
 ```
+
+## demo coloration syntaxique
+```js
+function demo(abc, def){
+   console.log('abc:', abc, 'def:', def);
+}
+```

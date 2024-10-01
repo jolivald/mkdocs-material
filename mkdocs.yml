@@ -13,8 +13,8 @@ copyright: Copyright &copy; 2024 AFPA
 theme:
   name: material
   custom_dir: material/overrides
+  language: fr
   features:
-    - announce.dismiss
     - content.action.edit
     - content.action.view
     - content.code.annotate
@@ -81,12 +81,16 @@ hooks:
   - material/overrides/hooks/shortcodes.py
   - material/overrides/hooks/translations.py
 
-# Additional configuration
+# Additional configuration 
 extra:
   status:
     new: Ajouté récemment
     deprecated: Deprécié
   generator: false
+
+# Custom styles
+extra_css:
+  - stylesheets/afpa.css 
 
 # Extensions
 markdown_extensions:
@@ -129,11 +133,14 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - toc:
+      title: Table des matières
 
 not_in_nav: |
   /tutorials/**/*.md
 
 # Page tree
 nav:
-  - Home: README.md
+  - Accueil: index.md
+  - Modèle Vue Contrôleur: mvc.md
 
