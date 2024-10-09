@@ -36,6 +36,7 @@ COPY package.json package.json
 COPY README.md README.md
 COPY *requirements.txt ./
 COPY pyproject.toml pyproject.toml
+COPY mkdocs.yml afpadocs.yml
 
 # Perform build and cleanup artifacts and caches
 RUN \

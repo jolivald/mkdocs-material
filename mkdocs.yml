@@ -143,4 +143,6 @@ not_in_nav: |
 nav:
   - Accueil: index.md
   - Modèle Vue Contrôleur: mvc.md
-
+  - Introduction à Git: git_intro.md
+  - "Web client: Exercice de groupe": web/exercice_groupe.md
+  - "Introduction à Javascript": web/intro_js.md
